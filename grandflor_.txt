@@ -1,0 +1,434 @@
+commit 7c5779f9141ca5f598a2c92d590da02a01d3fa94
+Author:     ramrambrent17-cpu <ramrambrent17@gmail.com>
+AuthorDate: 2026-11-07 12:44:50 +0000
+Commit:     ramrambrent17-cpu <ramrambrent17@gmail.com>
+CommitDate: 2026-11-07 12:44:50 +0000
+
+    Complete 2
+
+diff --git a/05-semantic.html b/05-semantic.html
+index 7e56e54..5df6cc3 100644
+--- a/05-semantic.html
++++ b/05-semantic.html
+@@ -6,19 +6,45 @@
+     <title>Semantic HTML</title>
+ </head>
+ <body>
+-    
++
+     <header>
+         <h1>My Student Website</h1>
+-        <p>Welcome to my webpage</p>
++        <p>Welcome to my webpage.</p>
+     </header>
+ 
+     <nav>
+         <ul>
+-            <li></li>
+-            <li></li>
+-            <li></li>
+-            <li></li>
++            <li><a href="#">Home</a></li>
++            <li><a href="#">About</a></li>
++            <li><a href="#">Skills</a></li>
++            <li><a href="#">Contact</a></li>
+         </ul>
+     </nav>
++
++    <main>
++
++        <section>
++            <h2>About Me</h2>
++
++            <article>
++                <h3>My Introduction</h3>
++                <p>
++                    I am a student learning HTML and web development.
++                    I enjoy creating simple websites and learning new skills.
++                </p>
++            </article>
++        </section>
++
++        <aside>
++            <h2>My Interests</h2>
++            <p>Web development, technology, music, and sports.</p>
++        </aside>
++
++    </main>
++
++    <footer>
++        <p>© 2026 My Student Website</p>
++    </footer>
++
+ </body>
+ </html>
+\ No newline at end of file
+diff --git a/portfolio.html b/portfolio.html
+new file mode 100644
+index 0000000..590f851
+--- /dev/null
++++ b/portfolio.html
+@@ -0,0 +1,118 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>My Student Portfolio</title>
++</head>
++<body>
++
++    <header>
++        <h1>Rambrent Grandflor</h1>
++        <p>BSIT Web Development Student</p>
++        <p>Hello! Welcome to my student portfolio.</p>
++
++        <nav>
++            <ul>
++                <li><a href="#home">Home</a></li>
++                <li><a href="#about">About</a></li>
++                <li><a href="#skills">Skills</a></li>
++                <li><a href="#projects">Projects</a></li>
++                <li><a href="#contact">Contact</a></li>
++            </ul>
++        </nav>
++    </header>
++
++    <main>
++
++        <section id="home">
++            <h2>Home</h2>
++            <p>
++                Welcome to my personal portfolio website.
++                This website shows my skills, projects, and information about me.
++            </p>
++        </section>
++
++        <section id="about">
++            <h2>About Me</h2>
++
++            <img src="images/profile.jpg" alt="Profile Photo" width="200">
++
++            <p>
++                I am a student who is interested in web development and technology.
++                I am currently learning how to create websites using HTML, CSS,
++                JavaScript, and other web technologies.
++            </p>
++        </section>
++
++        <section id="skills">
++            <h2>My Skills</h2>
++
++            <ul>
++                <li>HTML</li>
++                <li>CSS</li>
++                <li>JavaScript</li>
++                <li>PHP</li>
++                <li>MySQL</li>
++                <li>Git</li>
++            </ul>
++        </section>
++
++        <section id="projects">
++            <h2>My Projects</h2>
++
++            <article>
++                <h3>Project 1 - Personal Website</h3>
++                <p>A simple personal website created using HTML and CSS.</p>
++                <a href="#">View Project</a>
++            </article>
++
++            <article>
++                <h3>Project 2 - Café Website</h3>
++                <p>A website concept for a café with menu and online ordering.</p>
++                <a href="#">View Project</a>
++            </article>
++
++            <article>
++                <h3>Project 3 - Student Registration</h3>
++                <p>A simple student registration form using HTML.</p>
++                <a href="#">View Project</a>
++            </article>
++
++        </section>
++
++        <section id="contact">
++            <h2>Contact Me</h2>
++
++            <form>
++
++                <label for="name">Name:</label>
++                <input type="text" id="name" name="name">
++                <br><br>
++
++                <label for="email">Email:</label>
++                <input type="email" id="email" name="email">
++                <br><br>
++
++                <label for="subject">Subject:</label>
++                <input type="text" id="subject" name="subject">
++                <br><br>
++
++                <label for="message">Message:</label>
++                <br>
++                <textarea id="message" name="message" rows="5" cols="30"></textarea>
++                <br><br>
++
++                <input type="submit" value="Send Message">
++
++            </form>
++        </section>
++
++    </main>
++
++    <footer>
++        <p>© 2026 - Rambrent Grandflor</p>
++    </footer>
++
++</body>
++</html>
+\ No newline at end of file
+
+commit 016fde6d252c37a1ce04f38b15653e16695bdc37
+Author:     ramrambrent17-cpu <ramrambrent17@gmail.com>
+AuthorDate: 2026-11-07 09:31:09 +0000
+Commit:     ramrambrent17-cpu <ramrambrent17@gmail.com>
+CommitDate: 2026-11-07 09:31:09 +0000
+
+    complete
+
+diff --git a/05-semantic.html b/05-semantic.html
+new file mode 100644
+index 0000000..7e56e54
+--- /dev/null
++++ b/05-semantic.html
+@@ -0,0 +1,24 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Semantic HTML</title>
++</head>
++<body>
++    
++    <header>
++        <h1>My Student Website</h1>
++        <p>Welcome to my webpage</p>
++    </header>
++
++    <nav>
++        <ul>
++            <li></li>
++            <li></li>
++            <li></li>
++            <li></li>
++        </ul>
++    </nav>
++</body>
++</html>
+\ No newline at end of file
+
+commit 14ab7c2036a657798886bf33a1479c298abc2aa9
+Author:     ramrambrent17-cpu <ramrambrent17@gmail.com>
+AuthorDate: 2026-11-07 09:07:04 +0000
+Commit:     ramrambrent17-cpu <ramrambrent17@gmail.com>
+CommitDate: 2026-11-07 09:07:04 +0000
+
+    Completed
+
+diff --git a/01-basic.html b/01-basic.html
+new file mode 100644
+index 0000000..a5a6643
+--- /dev/null
++++ b/01-basic.html
+@@ -0,0 +1,34 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Basic Emmet</title>
++</head>
++<body>
++    <h1>My Web Page</h1>
++
++    <h2>Rambrent Grandlor</h2>
++    
++    <nav>
++        <p>Navigation Area</p>
++    </nav>
++
++    <main>
++        <h2>Aboout My Page</h2>
++
++        <p></p>
++        <p></p>
++        <p></p>
++
++        <div>
++            This is a division.
++        </div>
++    </main>
++
++    <footer>
++        <p>My Footer</p>
++    </footer>
++
++</body>
++</html>
+\ No newline at end of file
+diff --git a/02-classse-ids.html b/02-classse-ids.html
+new file mode 100644
+index 0000000..2e7c78b
+--- /dev/null
++++ b/02-classse-ids.html
+@@ -0,0 +1,36 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Classes and IDs</title>
++</head>
++<body>
++
++    <header class="site-header">
++        <h1>My Website</h1>
++    </header>
++
++    <nav id="main-nav">
++        <p>My Navigation</p>
++    </nav>
++
++    <main class="content">
++        <section id="about">
++            <h2>About Me</h2>
++            <p class="introduction">
++                Hello I am a student learning web development.
++            </p>
++
++            <div id="container" class="card featured">
++                
++                <p>This is my credit card.</p>
++            </div>
++        </section>
++    </main>
++    
++    <footer class="site-footer">
++        <p>Date 2026 My Website</p>
++    </footer>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/03-navigation.html b/03-navigation.html
+new file mode 100644
+index 0000000..2f835d4
+--- /dev/null
++++ b/03-navigation.html
+@@ -0,0 +1,29 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Navigation</title>
++</head>
++<body>
++
++    <header>
++        <h1>My Navigation Page</h1>
++    </header>
++
++        <ul>
++            <li><a href=""></a>Home</li>
++            <li><a href=""></a>About</li>
++            <li><a href=""></a>Services</li>
++            <li><a href=""></a>Projects</li>
++            <li><a href=""></a>Contact</li>
++        </ul>
++    </nav>
++    
++    <main>
++        <h2>Welcome</h2>
++        <p>This page demonstrates navigationusing Emmet</p>
++    </main>
++
++</body>
++</html>
+\ No newline at end of file
+diff --git a/04-form.html b/04-form.html
+new file mode 100644
+index 0000000..e1be202
+--- /dev/null
++++ b/04-form.html
+@@ -0,0 +1,31 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Student Registration Form</title>
++</head>
++<body>
++    <h1>Student Registration Form</h1>
++
++    <form>
++        
++        <label for="student-id">Student ID:</label>
++
++        <input type="text" id="student-id" name="student-id" placeholder="Enter your student-ID">
++        <br><br>
++
++        <label for="fullname">Full Name:</label>
++        <input type="text" id="fullname" name="student-id" placeholder="Enter your full name">
++        <br><br>
++
++        <label for="email">Email:</label>
++        <input type="text" id="email" name="email" placeholder="Enter your email">
++        <br></br>
++
++        <label for="password">Password</label>
++        <input type="text" id="password" name="">
++        
++    </form>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/emmet-laboratory/index.html b/emmet-laboratory/index.html
+new file mode 100644
+index 0000000..c3b1098
+--- /dev/null
++++ b/emmet-laboratory/index.html
+@@ -0,0 +1,13 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>emmet laboratory</title>
++</head>
++<body>
++    <h1>Emmet Laboratory Activity</h1>
++
++    <p>Hello Welcome to Emmet Laboratory Activity</p>
++</body>
++</html>
+\ No newline at end of file
+
+commit f5cbd13154eb1fc3ffa0109d2c3e526f703e6ff2
+Author:     ramrambrent17-cpu <ramrambrent17@gmail.com>
+AuthorDate: 2026-10-03 14:20:25 +0800
+Commit:     GitHub <noreply@github.com>
+CommitDate: 2026-10-03 14:20:25 +0800
+
+    Initial commit
+
+diff --git a/README.md b/README.md
+new file mode 100644
+index 0000000..b407ac5
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1 @@
++# WebTech
+\ No newline at end of file
